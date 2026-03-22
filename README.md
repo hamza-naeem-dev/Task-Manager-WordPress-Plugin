@@ -33,20 +33,18 @@ A custom **WordPress Task Manager Plugin** that allows users to create, manage, 
 
 # 📸 Screenshots
 
-![Task Form](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20Manager%20Form.png)
-![Task List](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20Manager%20List.png)
-![Task List Edit](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20List%20Edit%20Functionality.png)
+![Task Form](assets/Task%20Manager%20Form.png)  
+![Task List](assets/Task%20Manager%20List.png)  
+![Task List Edit](assets/Task%20List%20Edit%20Functionality.png)
 
 ---
 
 # 📦 Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin.git
-
+```bash
+git clone https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin.git
 Move it to:
-
 wp-content/plugins/
 Activate plugin from WordPress dashboard
 🧩 Usage
