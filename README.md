@@ -1,79 +1,79 @@
-Task Manager Plugin
-Description
+# 📝 WordPress Task Manager Plugin
 
-The Task Manager Plugin is a custom WordPress plugin that allows users to create and manage tasks from the frontend of a website. The plugin uses a shortcode to display a task submission form where users can enter task details and select a task status. Submitted tasks are stored as a Custom Post Type and displayed on a separate page.
+A custom **WordPress Task Manager Plugin** that allows users to create, manage, and display tasks using frontend forms and Custom Post Types.
 
-The plugin also allows users to update the task status directly from the frontend using an edit feature.
+---
 
-Features
+# 🚀 Features
 
-Custom WordPress plugin built using OOP structure
+- Create tasks using frontend form (shortcode-based)  
+- Display tasks dynamically using WP_Query  
+- Store task data using Custom Post Types  
+- Update task status using post meta  
+- Secure form handling with validation and sanitization  
+- Prevent duplicate submissions using Post-Redirect-Get pattern  
 
-Registers a Custom Post Type (Tasks)
+---
 
-Frontend task submission form using shortcode
+# 🛠 Technologies Used
 
-Nonce verification to protect against CSRF attacks
+### Backend
+- PHP  
+- WordPress Plugin API  
+- Custom Post Types (CPT)  
+- Post Meta API  
+- WP_Query  
 
-Input sanitization for security
+### Frontend
+- HTML  
+- CSS  
+- JavaScript (basic DOM handling)  
 
-Stores task status using post meta
+---
 
-Displays tasks using WP_Query
+# 📸 Screenshots
 
-Allows users to edit and update task status
+![Task Form](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20Manager%20Form.png)
+![Task List](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20Manager%20List.png)
+![Task List Edit](https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin/blob/main/assets/Task%20List%20Edit%20Functionality.png)
 
-How It Works
+---
 
-The plugin registers a Custom Post Type called "Tasks".
+# 📦 Installation
 
-A shortcode [tm_form] displays a form where users can submit new tasks.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hamza-naeem-dev/Task-Manager-WordPress-Plugin.git
 
-When the form is submitted:
+Move it to:
 
-A nonce verification is performed.
-
-Input data is sanitized.
-
-The task is saved using wp_insert_post().
-
-Tasks are displayed on another page using the shortcode [tm_list].
-
-Each task includes an Edit button that allows users to update the task status.
-
-Task status is updated using update_post_meta().
-
-Shortcodes
-Display Task Submission Form
-[tm_form]
+wp-content/plugins/
+Activate plugin from WordPress dashboard
+🧩 Usage
+Add Task Form
+[task_manager_form]
 Display Task List
-[tm_list]
-Security Measures
-
-The plugin implements several security best practices:
-
-Prevents direct file access using ABSPATH
-
-Uses WordPress nonces to protect forms
-
-Sanitizes user inputs before saving to the database
-
-Validates allowed task status values
-
-Technologies Used
-
-WordPress Plugin Development
-
-PHP
-
-WordPress Hooks
-
-Custom Post Types
-
-WP_Query
-
-WordPress Security Functions
-
-Author
+[task_manager_list]
+⚙️ How It Works
+User submits a task using the form
+Data is validated and sanitized
+Task is stored as a Custom Post Type
+Task status is managed using post meta
+Tasks are displayed dynamically using WP_Query
+🧠 Learning Highlights
+Building a full CRUD-like system using WordPress
+Managing data using Custom Post Types and post meta
+Implementing secure form handling
+Using WP_Query for dynamic frontend rendering
+⚠️ Future Improvements
+Add task editing and deletion
+Add AJAX functionality
+Add user-based task filtering
+Improve UI with Bootstrap
+📌 Author
 
 Hamza Naeem
+
+📄 License
+
+GPL2
